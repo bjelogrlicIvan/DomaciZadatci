@@ -1,0 +1,242 @@
+{
+	"id": "e72a6724-d2f9-4040-b5bd-d0c2cde6423b",
+	"name": "QA16",
+	"timestamp": "2023-06-16T21:38:17.781Z",
+	"collection_id": "26678502-95348325-0428-4258-a5a5-cbceb630ec24",
+	"folder_id": "26678502-5eccded5-568c-443e-ad21-9e01cf2d3c5a",
+	"environment_id": "26678502-b1da7a01-7d7d-4f5d-b1cf-ecfd4cedf038",
+	"totalPass": 8,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-16T21:38:16.293Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7ffc53a2-a06f-4890-a28b-250ffe887e9f",
+			"name": "Get all books",
+			"url": "https://demoqa.com/BookStore/v1/Books",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				50
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "372d5968-95be-4778-81ff-609792497afd",
+			"name": "Get one book",
+			"url": "https://demoqa.com/BookStore/v1/Book?ISBN=9781449325862",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body has correct book properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body has correct book properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body has correct book properties": true
+				}
+			]
+		},
+		{
+			"id": "242ea35f-8c4c-4cbf-99f2-d1b947b9d953",
+			"name": "Add books to profile",
+			"url": "https://demoqa.com/BookStore/v1/Books",
+			"time": 69,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "4713f3ca-2312-48df-915b-dd32f2f83e2a",
+			"name": "Add books to profile Copy",
+			"url": "https://demoqa.com/BookStore/v1/Books",
+			"time": 82,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				82
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "79882ba1-338d-4a50-8a7b-ad95926de810",
+			"name": "Change books in user profile",
+			"url": "https://demoqa.com/BookStore/v1/Books/9781449325862",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body has correct properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body has correct properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body has correct properties": true
+				}
+			]
+		},
+		{
+			"id": "8ccd3e12-d128-4af7-90a7-f4a3a7af9775",
+			"name": "Remove one book from user",
+			"url": "https://demoqa.com/BookStore/v1/Book?ISBN=9781449325862",
+			"time": 124,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "803d3305-2919-496d-90a5-a861979035a4",
+			"name": "Remove all books from user",
+			"url": "https://demoqa.com/BookStore/v1/Books?UserId=506eb9be-598c-4f70-b6ed-dd204108be10",
+			"time": 61,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				61
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 552,
+	"collection": {
+		"requests": [
+			{
+				"id": "7ffc53a2-a06f-4890-a28b-250ffe887e9f",
+				"method": "GET"
+			},
+			{
+				"id": "372d5968-95be-4778-81ff-609792497afd",
+				"method": "GET"
+			},
+			{
+				"id": "242ea35f-8c4c-4cbf-99f2-d1b947b9d953",
+				"method": "POST"
+			},
+			{
+				"id": "4713f3ca-2312-48df-915b-dd32f2f83e2a",
+				"method": "POST"
+			},
+			{
+				"id": "79882ba1-338d-4a50-8a7b-ad95926de810",
+				"method": "PUT"
+			},
+			{
+				"id": "8ccd3e12-d128-4af7-90a7-f4a3a7af9775",
+				"method": "DELETE"
+			},
+			{
+				"id": "803d3305-2919-496d-90a5-a861979035a4",
+				"method": "DELETE"
+			}
+		]
+	}
+}
